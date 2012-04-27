@@ -1,0 +1,23 @@
+{
+	"name": "SassSee",
+	"manifest_version": 2,
+	"description": "With a quick inpection see which Sass files contain your styles.",
+	"devtools_page": "devtools.html",
+	//"background_page": "background.html",
+	//"background":  {
+    //    "scripts": [ "background.js" ]},
+    //"options_page": "options.html",
+	"icons": {
+		"32": "sasssee-32.png",
+		"48": "sasssee-48.png",
+		"64": "sasssee-64.png",
+		"128": "sasssee-128.png"
+
+	},
+	"minimum_chrome_version": "10.0",
+	"permissions": [
+	"tabs",
+	"http://*/*",
+    "https://*/*"],
+    "version": "1.0"
+}

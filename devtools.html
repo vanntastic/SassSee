@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            (function(dt) {
+                var requestUrl;
+    
+                dt.panels.create("SassSee", "sasssee-24.png", "Panel.html");
+    
+                dt.resources.onNavigated.addListener(function(url) {
+                    requestUrl = url;
+                });
+    
+                dt.resources.onFinished.addListener(function(resource) {
+                    if (resource.request.url === requestUrl) {
+                        // TODO handle request, communicate with panel.html to modify its content
+                    }
+                });
+            })(chrome.devtools);         
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
